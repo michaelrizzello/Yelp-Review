@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12ED5A6B995423F602266A5E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F7952E2D5C71DF0F495E60 /* libPods.a */; };
+		A39A2EB1FFB07829D54BAE45 /* libPods-Yelp Review.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B2D1CB295307CA9D79CB19 /* libPods-Yelp Review.a */; };
+		ACE2FCA71CF72F3E00E66790 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE2FCA61CF72F3E00E66790 /* main.m */; };
+		ACE2FCAA1CF72F3E00E66790 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE2FCA91CF72F3E00E66790 /* AppDelegate.m */; };
+		ACE2FCB01CF72F3E00E66790 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE2FCAE1CF72F3E00E66790 /* Main.storyboard */; };
+		ACE2FCB21CF72F3E00E66790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE2FCB11CF72F3E00E66790 /* Assets.xcassets */; };
+		ACE2FCB51CF72F3E00E66790 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE2FCB31CF72F3E00E66790 /* LaunchScreen.storyboard */; };
+		ACE2FCC31CF7309200E66790 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE2FCC21CF7309200E66790 /* APIManager.m */; };
+		ACE2FCC61CF7345200E66790 /* NSURLRequest+OAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE2FCC51CF7345200E66790 /* NSURLRequest+OAuth.m */; };
+		ACE2FCCD1CF7391D00E66790 /* ResturantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE2FCCC1CF7391D00E66790 /* ResturantViewController.m */; };
+		ACE2FCD11CF73D6100E66790 /* ResturantCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE2FCD01CF73D6100E66790 /* ResturantCell.m */; };
+		ACE2FCD41CF73DCD00E66790 /* Resturant.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE2FCD31CF73DCD00E66790 /* Resturant.m */; };
+		ACE2FCD81CF7420E00E66790 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE2FCD71CF7420E00E66790 /* LocationManager.m */; };
+		ACE2FCDB1CF74FE300E66790 /* GlobalUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE2FCDA1CF74FE300E66790 /* GlobalUtilities.m */; };
+		ACE2FCDF1CF7622D00E66790 /* ResturantDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE2FCDE1CF7622D00E66790 /* ResturantDetail.m */; };
+		ACE2FCE21CF7761800E66790 /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE2FCE11CF7761800E66790 /* Review.m */; };
+		ACE2FCEA1CF77F4A00E66790 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE2FCE91CF77F4A00E66790 /* LoadingViewController.m */; };
+		ACE2FCF01CF7803300E66790 /* ViewStackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE2FCEF1CF7803300E66790 /* ViewStackManager.m */; };
+		ACE2FCF31CF78CD900E66790 /* SortingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE2FCF21CF78CD900E66790 /* SortingViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2FAC84C52E0E4C613C453CE1 /* Pods-Yelp Review.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yelp Review.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yelp Review/Pods-Yelp Review.release.xcconfig"; sourceTree = "<group>"; };
+		60F7952E2D5C71DF0F495E60 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B2D1CB295307CA9D79CB19 /* libPods-Yelp Review.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Yelp Review.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE2FCA21CF72F3E00E66790 /* Yelp Review.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yelp Review.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE2FCA61CF72F3E00E66790 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ACE2FCA81CF72F3E00E66790 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ACE2FCA91CF72F3E00E66790 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ACE2FCAF1CF72F3E00E66790 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACE2FCB11CF72F3E00E66790 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACE2FCB41CF72F3E00E66790 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACE2FCB61CF72F3E00E66790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE2FCC11CF7309200E66790 /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		ACE2FCC21CF7309200E66790 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		ACE2FCC41CF7345200E66790 /* NSURLRequest+OAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+OAuth.h"; sourceTree = "<group>"; };
+		ACE2FCC51CF7345200E66790 /* NSURLRequest+OAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+OAuth.m"; sourceTree = "<group>"; };
+		ACE2FCCB1CF7391D00E66790 /* ResturantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResturantViewController.h; sourceTree = "<group>"; };
+		ACE2FCCC1CF7391D00E66790 /* ResturantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResturantViewController.m; sourceTree = "<group>"; };
+		ACE2FCCF1CF73D6100E66790 /* ResturantCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResturantCell.h; sourceTree = "<group>"; };
+		ACE2FCD01CF73D6100E66790 /* ResturantCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResturantCell.m; sourceTree = "<group>"; };
+		ACE2FCD21CF73DCD00E66790 /* Resturant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resturant.h; sourceTree = "<group>"; };
+		ACE2FCD31CF73DCD00E66790 /* Resturant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resturant.m; sourceTree = "<group>"; };
+		ACE2FCD61CF7420E00E66790 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		ACE2FCD71CF7420E00E66790 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		ACE2FCD91CF74FE300E66790 /* GlobalUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalUtilities.h; sourceTree = "<group>"; };
+		ACE2FCDA1CF74FE300E66790 /* GlobalUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalUtilities.m; sourceTree = "<group>"; };
+		ACE2FCDD1CF7622D00E66790 /* ResturantDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResturantDetail.h; sourceTree = "<group>"; };
+		ACE2FCDE1CF7622D00E66790 /* ResturantDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResturantDetail.m; sourceTree = "<group>"; };
+		ACE2FCE01CF7761800E66790 /* Review.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Review.h; sourceTree = "<group>"; };
+		ACE2FCE11CF7761800E66790 /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Review.m; sourceTree = "<group>"; };
+		ACE2FCE81CF77F4A00E66790 /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
+		ACE2FCE91CF77F4A00E66790 /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
+		ACE2FCEE1CF7803300E66790 /* ViewStackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewStackManager.h; sourceTree = "<group>"; };
+		ACE2FCEF1CF7803300E66790 /* ViewStackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewStackManager.m; sourceTree = "<group>"; };
+		ACE2FCF11CF78CD900E66790 /* SortingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortingViewController.h; sourceTree = "<group>"; };
+		ACE2FCF21CF78CD900E66790 /* SortingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortingViewController.m; sourceTree = "<group>"; };
+		CE56B74DF7B5FBE68DFF5268 /* Pods-Yelp Review.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yelp Review.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yelp Review/Pods-Yelp Review.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACE2FC9F1CF72F3E00E66790 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39A2EB1FFB07829D54BAE45 /* libPods-Yelp Review.a in Frameworks */,
+				12ED5A6B995423F602266A5E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2FEEBA0FBE57E4B619307D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE56B74DF7B5FBE68DFF5268 /* Pods-Yelp Review.debug.xcconfig */,
+				2FAC84C52E0E4C613C453CE1 /* Pods-Yelp Review.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ACE2FC991CF72F3E00E66790 = {
+			isa = PBXGroup;
+			children = (
+				ACE2FCA41CF72F3E00E66790 /* Yelp Review */,
+				ACE2FCA31CF72F3E00E66790 /* Products */,
+				A2FEEBA0FBE57E4B619307D1 /* Pods */,
+				E548214168302B4B1A768ACD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ACE2FCA31CF72F3E00E66790 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACE2FCA21CF72F3E00E66790 /* Yelp Review.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACE2FCA41CF72F3E00E66790 /* Yelp Review */ = {
+			isa = PBXGroup;
+			children = (
+				ACE2FCE71CF77F3900E66790 /* ViewStackManager */,
+				ACE2FCDC1CF7621B00E66790 /* Resturant Detail */,
+				ACE2FCD51CF741FF00E66790 /* Location Manager */,
+				ACE2FCCE1CF73ABF00E66790 /* Models */,
+				ACE2FCC71CF738E100E66790 /* Resturant CollectionView */,
+				ACE2FCBD1CF72F5000E66790 /* APIManager */,
+				ACE2FCBC1CF72F4800E66790 /* Global */,
+				ACE2FCAE1CF72F3E00E66790 /* Main.storyboard */,
+				ACE2FCB11CF72F3E00E66790 /* Assets.xcassets */,
+				ACE2FCB31CF72F3E00E66790 /* LaunchScreen.storyboard */,
+				ACE2FCB61CF72F3E00E66790 /* Info.plist */,
+				ACE2FCA51CF72F3E00E66790 /* Supporting Files */,
+			);
+			path = "Yelp Review";
+			sourceTree = "<group>";
+		};
+		ACE2FCA51CF72F3E00E66790 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACE2FCA61CF72F3E00E66790 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACE2FCBC1CF72F4800E66790 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				ACE2FCA81CF72F3E00E66790 /* AppDelegate.h */,
+				ACE2FCA91CF72F3E00E66790 /* AppDelegate.m */,
+				ACE2FCD91CF74FE300E66790 /* GlobalUtilities.h */,
+				ACE2FCDA1CF74FE300E66790 /* GlobalUtilities.m */,
+			);
+			name = Global;
+			sourceTree = "<group>";
+		};
+		ACE2FCBD1CF72F5000E66790 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				ACE2FCC11CF7309200E66790 /* APIManager.h */,
+				ACE2FCC21CF7309200E66790 /* APIManager.m */,
+				ACE2FCC41CF7345200E66790 /* NSURLRequest+OAuth.h */,
+				ACE2FCC51CF7345200E66790 /* NSURLRequest+OAuth.m */,
+			);
+			name = APIManager;
+			sourceTree = "<group>";
+		};
+		ACE2FCC71CF738E100E66790 /* Resturant CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				ACE2FCCB1CF7391D00E66790 /* ResturantViewController.h */,
+				ACE2FCCC1CF7391D00E66790 /* ResturantViewController.m */,
+				ACE2FCCF1CF73D6100E66790 /* ResturantCell.h */,
+				ACE2FCD01CF73D6100E66790 /* ResturantCell.m */,
+			);
+			name = "Resturant CollectionView";
+			sourceTree = "<group>";
+		};
+		ACE2FCCE1CF73ABF00E66790 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACE2FCD21CF73DCD00E66790 /* Resturant.h */,
+				ACE2FCD31CF73DCD00E66790 /* Resturant.m */,
+				ACE2FCE01CF7761800E66790 /* Review.h */,
+				ACE2FCE11CF7761800E66790 /* Review.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		ACE2FCD51CF741FF00E66790 /* Location Manager */ = {
+			isa = PBXGroup;
+			children = (
+				ACE2FCD61CF7420E00E66790 /* LocationManager.h */,
+				ACE2FCD71CF7420E00E66790 /* LocationManager.m */,
+			);
+			name = "Location Manager";
+			sourceTree = "<group>";
+		};
+		ACE2FCDC1CF7621B00E66790 /* Resturant Detail */ = {
+			isa = PBXGroup;
+			children = (
+				ACE2FCDD1CF7622D00E66790 /* ResturantDetail.h */,
+				ACE2FCDE1CF7622D00E66790 /* ResturantDetail.m */,
+			);
+			name = "Resturant Detail";
+			sourceTree = "<group>";
+		};
+		ACE2FCE71CF77F3900E66790 /* ViewStackManager */ = {
+			isa = PBXGroup;
+			children = (
+				ACE2FCE81CF77F4A00E66790 /* LoadingViewController.h */,
+				ACE2FCE91CF77F4A00E66790 /* LoadingViewController.m */,
+				ACE2FCEE1CF7803300E66790 /* ViewStackManager.h */,
+				ACE2FCEF1CF7803300E66790 /* ViewStackManager.m */,
+				ACE2FCF11CF78CD900E66790 /* SortingViewController.h */,
+				ACE2FCF21CF78CD900E66790 /* SortingViewController.m */,
+			);
+			name = ViewStackManager;
+			sourceTree = "<group>";
+		};
+		E548214168302B4B1A768ACD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67B2D1CB295307CA9D79CB19 /* libPods-Yelp Review.a */,
+				60F7952E2D5C71DF0F495E60 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACE2FCA11CF72F3E00E66790 /* Yelp Review */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACE2FCB91CF72F3E00E66790 /* Build configuration list for PBXNativeTarget "Yelp Review" */;
+			buildPhases = (
+				C8968E26D913903D20A929E8 /* Check Pods Manifest.lock */,
+				ACE2FC9E1CF72F3E00E66790 /* Sources */,
+				ACE2FC9F1CF72F3E00E66790 /* Frameworks */,
+				ACE2FCA01CF72F3E00E66790 /* Resources */,
+				F36E7BF5BB701BA0B7E30612 /* Embed Pods Frameworks */,
+				32A7B81347F13CB46CDC45E1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yelp Review";
+			productName = "Yelp Review";
+			productReference = ACE2FCA21CF72F3E00E66790 /* Yelp Review.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACE2FC9A1CF72F3E00E66790 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Michael Rizzello";
+				TargetAttributes = {
+					ACE2FCA11CF72F3E00E66790 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = ACE2FC9D1CF72F3E00E66790 /* Build configuration list for PBXProject "Yelp Review" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACE2FC991CF72F3E00E66790;
+			productRefGroup = ACE2FCA31CF72F3E00E66790 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACE2FCA11CF72F3E00E66790 /* Yelp Review */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACE2FCA01CF72F3E00E66790 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE2FCB51CF72F3E00E66790 /* LaunchScreen.storyboard in Resources */,
+				ACE2FCB21CF72F3E00E66790 /* Assets.xcassets in Resources */,
+				ACE2FCB01CF72F3E00E66790 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32A7B81347F13CB46CDC45E1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yelp Review/Pods-Yelp Review-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8968E26D913903D20A929E8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F36E7BF5BB701BA0B7E30612 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACE2FC9E1CF72F3E00E66790 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE2FCDF1CF7622D00E66790 /* ResturantDetail.m in Sources */,
+				ACE2FCE21CF7761800E66790 /* Review.m in Sources */,
+				ACE2FCAA1CF72F3E00E66790 /* AppDelegate.m in Sources */,
+				ACE2FCF31CF78CD900E66790 /* SortingViewController.m in Sources */,
+				ACE2FCA71CF72F3E00E66790 /* main.m in Sources */,
+				ACE2FCD81CF7420E00E66790 /* LocationManager.m in Sources */,
+				ACE2FCF01CF7803300E66790 /* ViewStackManager.m in Sources */,
+				ACE2FCCD1CF7391D00E66790 /* ResturantViewController.m in Sources */,
+				ACE2FCC61CF7345200E66790 /* NSURLRequest+OAuth.m in Sources */,
+				ACE2FCEA1CF77F4A00E66790 /* LoadingViewController.m in Sources */,
+				ACE2FCD11CF73D6100E66790 /* ResturantCell.m in Sources */,
+				ACE2FCDB1CF74FE300E66790 /* GlobalUtilities.m in Sources */,
+				ACE2FCD41CF73DCD00E66790 /* Resturant.m in Sources */,
+				ACE2FCC31CF7309200E66790 /* APIManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ACE2FCAE1CF72F3E00E66790 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACE2FCAF1CF72F3E00E66790 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACE2FCB31CF72F3E00E66790 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACE2FCB41CF72F3E00E66790 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACE2FCB71CF72F3E00E66790 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACE2FCB81CF72F3E00E66790 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACE2FCBA1CF72F3E00E66790 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE56B74DF7B5FBE68DFF5268 /* Pods-Yelp Review.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Yelp Review/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mikerizzello.Yelp-Review";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ACE2FCBB1CF72F3E00E66790 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FAC84C52E0E4C613C453CE1 /* Pods-Yelp Review.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Yelp Review/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mikerizzello.Yelp-Review";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACE2FC9D1CF72F3E00E66790 /* Build configuration list for PBXProject "Yelp Review" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE2FCB71CF72F3E00E66790 /* Debug */,
+				ACE2FCB81CF72F3E00E66790 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACE2FCB91CF72F3E00E66790 /* Build configuration list for PBXNativeTarget "Yelp Review" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE2FCBA1CF72F3E00E66790 /* Debug */,
+				ACE2FCBB1CF72F3E00E66790 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACE2FC9A1CF72F3E00E66790 /* Project object */;
+}

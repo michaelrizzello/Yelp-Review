@@ -1,0 +1,26 @@
+PODS:
+  - FLAnimatedImage (1.0.12)
+  - OMGHTTPURLRQ/UserAgent (3.1.2)
+  - PINCache (2.2.2)
+  - PINRemoteImage (2.1.4):
+    - PINRemoteImage/FLAnimatedImage (= 2.1.4)
+  - PINRemoteImage/Core (2.1.4):
+    - PINCache (>= 2.1)
+  - PINRemoteImage/FLAnimatedImage (2.1.4):
+    - FLAnimatedImage (>= 1.0)
+    - PINRemoteImage/Core
+  - TDOAuth (1.1.2):
+    - OMGHTTPURLRQ/UserAgent
+
+DEPENDENCIES:
+  - PINRemoteImage
+  - TDOAuth (~> 1.1)
+
+SPEC CHECKSUMS:
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  OMGHTTPURLRQ: 38316b56d88125c600bcdb16df8329147da2b0ee
+  PINCache: 078426d356ab95ef875e9e62e5c35a2ea3333c28
+  PINRemoteImage: 4ac4011c5caefd6befd99758e09becede05d3226
+  TDOAuth: f7e356e834295b83c7b5066ee72a30f128c5f722
+
+COCOAPODS: 0.39.0
