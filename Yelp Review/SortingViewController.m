@@ -37,6 +37,21 @@
     [_sortingTableview reloadData];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [touches anyObject];
+    
+    if (![[touch view] isEqual:_sortingTableview])
+    {
+        [[ViewStackManager sharedInstance] dismissSortingScreen];
+    }
+    
+    
+    [super touchesBegan:touches withEvent:event];
+}
+
+#pragma mark - UITableviewDelegate methods
+
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return _sortByArray.count;

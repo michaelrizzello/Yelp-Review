@@ -14,9 +14,8 @@
 #import "GlobalUtilities.h"
 #import "ResturantDetail.h"
 #import "ViewStackManager.h"
-#import "SortingViewController.h"
 
-@interface ResturantViewController()<UICollectionViewDelegate, UICollectionViewDataSource, ResturantSortingControllerDelegate>
+@interface ResturantViewController()<UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
@@ -46,62 +45,13 @@
     self.collectionView.dataSource = self;
     
     [self requestResturantData:@"Ethiopian"];
-    
 }
+
+#pragma mark - Button Action methods
 
 - (void)sortAction
 {
     [[ViewStackManager sharedInstance] presentSortingScreen: self];
-}
-
-- (void) sortByName
-{
-    NSArray *sortedArray = [_businesses sortedArrayUsingSelector:
-                            @selector(localizedCaseInsensitiveCompare:)];
-    _businesses = [[NSArray alloc] initWithArray:sortedArray];
-    
-    [self.collectionView reloadData];
-
-}
-
-- (void) sortByRating
-{
-    NSArray *sortedArray = [_businesses sortedArrayUsingComparator:^NSComparisonResult(Resturant* a, Resturant* b) {
-        
-        float firstDate = a.rating;
-        float secondDate = b.rating;
-        
-        if (firstDate < secondDate)
-            return NSOrderedAscending;
-        if (firstDate > secondDate)
-            return NSOrderedDescending;
-        return (NSComparisonResult)NSOrderedSame;
-    }];
-    
-    _businesses = [[NSArray alloc] initWithArray:sortedArray];
-    
-    [self.collectionView reloadData];
-
-}
-
-- (void) sortByMenuUpdated
-{
-    NSArray *sortedArray = [_businesses sortedArrayUsingComparator:^NSComparisonResult(Resturant* a, Resturant* b) {
-        
-        NSUInteger *firstDate = a.menuUpdatedDate;
-        NSUInteger *secondDate = b.menuUpdatedDate;
-        
-        if (firstDate < secondDate)
-            return NSOrderedAscending;
-        if (firstDate > secondDate)
-            return NSOrderedDescending;
-        return (NSComparisonResult)NSOrderedSame;
-    }];
-    
-    _businesses = [[NSArray alloc] initWithArray:sortedArray];
-    
-    [self.collectionView reloadData];
-
 }
 
 - (IBAction)searchAction:(id)sender {
@@ -110,6 +60,8 @@
     
     [_searchBar resignFirstResponder];
 }
+
+#pragma mark - Data Request methods
 
 - (void) requestResturantData: (NSString *) searchText
 {
@@ -155,6 +107,21 @@
     
 }
 
+#pragma mark - Segue methods
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"ResturantDetail"])
+    {
+        NSIndexPath *indexPath = [[self.collectionView indexPathsForSelectedItems] lastObject];
+        Resturant *res = [_businesses objectAtIndex:indexPath.row];
+        ResturantDetail *destViewController = segue.destinationViewController;
+        destViewController.resturant = res;
+    }
+}
+
+#pragma mark - CollectionViewDelegate methods
+
+
 - (UICollectionViewCell *) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString * PlainCellIdentifier = @"ResturantCell";
@@ -183,16 +150,6 @@
     return ( plainCell );
     
     
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"ResturantDetail"])
-    {
-        NSIndexPath *indexPath = [[self.collectionView indexPathsForSelectedItems] lastObject];
-        Resturant *res = [_businesses objectAtIndex:indexPath.row];
-        ResturantDetail *destViewController = segue.destinationViewController;
-        destViewController.resturant = res;
-    }
 }
 
 - (void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
@@ -235,5 +192,61 @@
     return 1.0;
 }
 
+
+#pragma mark - ResturantSortingControllerDelegate methods
+- (void) sortByName
+{
+    
+    NSArray *sortedArray = [_businesses sortedArrayUsingComparator: ^(Resturant *a1, Resturant *a2) {
+        return [a1.resturantName compare:a2.resturantName];
+    }];
+    
+    _businesses = [[NSArray alloc] initWithArray:sortedArray];
+    
+    [self.collectionView reloadData];
+    
+}
+
+- (void) sortByRating
+{
+    
+    NSArray *sortedArray = [_businesses sortedArrayUsingComparator:^NSComparisonResult(Resturant* a, Resturant* b) {
+        
+        float firstDate = a.rating;
+        float secondDate = b.rating;
+        
+        if (firstDate < secondDate)
+            return NSOrderedAscending;
+        if (firstDate > secondDate)
+            return NSOrderedDescending;
+        return (NSComparisonResult)NSOrderedSame;
+    }];
+    
+    _businesses = [[NSArray alloc] initWithArray:sortedArray];
+    
+    [self.collectionView reloadData];
+    
+}
+
+- (void) sortByMenuUpdated
+{
+    
+    NSArray *sortedArray = [_businesses sortedArrayUsingComparator:^NSComparisonResult(Resturant* a, Resturant* b) {
+        
+        NSUInteger *firstDate = a.menuUpdatedDate;
+        NSUInteger *secondDate = b.menuUpdatedDate;
+        
+        if (firstDate < secondDate)
+            return NSOrderedAscending;
+        if (firstDate > secondDate)
+            return NSOrderedDescending;
+        return (NSComparisonResult)NSOrderedSame;
+    }];
+    
+    _businesses = [[NSArray alloc] initWithArray:sortedArray];
+    
+    [self.collectionView reloadData];
+    
+}
 
 @end

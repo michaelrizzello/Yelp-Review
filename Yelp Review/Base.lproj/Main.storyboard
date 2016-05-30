@@ -77,14 +77,14 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H9I-2X-Koi">
-                                <rect key="frame" x="100" y="120" width="400" height="380"/>
+                                <rect key="frame" x="20" y="120" width="560" height="280"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SortingCell" id="zF3-kz-wEF">
-                                        <rect key="frame" x="0.0" y="28" width="400" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="560" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zF3-kz-wEF" id="hEc-V5-WcT">
-                                            <rect key="frame" x="0.0" y="0.0" width="400" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -95,9 +95,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="H9I-2X-Koi" firstAttribute="top" secondItem="zeH-2e-a1Y" secondAttribute="bottom" constant="100" id="EEC-By-yPp"/>
-                            <constraint firstAttribute="trailing" secondItem="H9I-2X-Koi" secondAttribute="trailing" constant="100" id="Ky6-gb-lGu"/>
-                            <constraint firstItem="alS-D8-Kv8" firstAttribute="top" secondItem="H9I-2X-Koi" secondAttribute="bottom" constant="100" id="TNV-Ju-1GO"/>
-                            <constraint firstItem="H9I-2X-Koi" firstAttribute="leading" secondItem="ATA-V6-t8A" secondAttribute="leading" constant="100" id="XUk-ww-Zvu"/>
+                            <constraint firstAttribute="trailing" secondItem="H9I-2X-Koi" secondAttribute="trailing" constant="20" id="Ky6-gb-lGu"/>
+                            <constraint firstItem="alS-D8-Kv8" firstAttribute="top" secondItem="H9I-2X-Koi" secondAttribute="bottom" constant="200" id="TNV-Ju-1GO"/>
+                            <constraint firstItem="H9I-2X-Koi" firstAttribute="leading" secondItem="ATA-V6-t8A" secondAttribute="leading" constant="20" id="XUk-ww-Zvu"/>
                         </constraints>
                     </view>
                     <connections>

@@ -80,6 +80,7 @@
     if (viewController)
     {
         //self.sortViewController.resturantViewController = viewController;
+        self.sortViewController.delegate = viewController;
     }
     
     dispatch_async(dispatch_get_main_queue(), ^{

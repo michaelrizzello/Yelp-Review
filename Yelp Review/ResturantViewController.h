@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SortingViewController.h"
 
 
-@interface ResturantViewController : UIViewController
+@interface ResturantViewController : UIViewController<ResturantSortingControllerDelegate>
 @end
